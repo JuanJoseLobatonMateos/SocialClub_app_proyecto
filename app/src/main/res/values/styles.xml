@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo base para la aplicación -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores primarios -->
+        <item name="colorPrimary">@color/colorBackground</item>
+        <item name="colorPrimaryDark">@color/input</item>
+        <item name="colorAccent">@color/colorText</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <!-- Configuraciones de texto -->
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Estilo para botones principales -->
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/colorText</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Estilo para inputs -->
+    <style name="AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/colorBackground</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/input_background</item>
+    </style>
+
+    <!-- Estilo para títulos -->
+    <style name="TitleText">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo para el texto normal -->
+    <style name="BodyText">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+   <!-- Estilos para el CalendarView personalizado -->
+    <style name="CustomCalendarView" parent="android:Widget.Material.CalendarView">
+        <item name="android:textColorPrimary">@drawable/calendar_date_selector</item>
+        <item name="android:textColorSecondary">#5AE208</item>
+        <item name="android:colorControlNormal">@color/colorBoton</item>
+        <item name="android:dateTextAppearance">@style/CalendarDateTextAppearance</item>
+        <item name="android:weekDayTextAppearance">@style/CalendarWeekDayAppearance</item>
+    </style>
+
+    <style name="CalendarDateTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@drawable/calendar_date_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CalendarWeekDayAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo para el Spinner -->
+    <style name="AppSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:popupBackground">@color/colorBackground</item>
+    </style>
+
+
+</resources>

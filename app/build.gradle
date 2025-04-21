@@ -1,0 +1,53 @@
+plugins {
+            id 'com.android.application' version '8.9.1' apply false
+        }
+        apply plugin: 'com.android.application'
+
+        android {
+            namespace 'com.jlobatonm.socialclub_app'
+            compileSdk 35
+            defaultConfig {
+                applicationId "com.jlobatonm.socialclub_app"
+                minSdk 31
+                //noinspection OldTargetApi
+                targetSdk 33
+                versionCode 1
+                versionName "1.0"
+                testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            }
+
+            buildTypes {
+                release {
+                    minifyEnabled false
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                }
+            }
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_17
+                targetCompatibility JavaVersion.VERSION_17
+            }
+            buildFeatures {
+                viewBinding true
+                dataBinding true
+
+            }
+        }
+
+        dependencies {
+            implementation libs.core.splashscreen
+            implementation libs.appcompat
+            implementation libs.material
+            implementation libs.constraintlayout
+            implementation libs.lifecycle.livedata.ktx
+            implementation libs.lifecycle.viewmodel.ktx
+            implementation libs.navigation.fragment
+            implementation libs.navigation.ui
+            implementation libs.annotation
+            testImplementation libs.junit
+            androidTestImplementation libs.ext.junit
+            androidTestImplementation libs.espresso.core
+            implementation libs.mysql.connector.java
+            implementation libs.jbcrypt
+            implementation libs.core
+
+        }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_reservas"
+        android:icon="@drawable/baseline_edit_calendar_24"
+        android:title="@string/reservar_pistas"/>
+
+    <item
+        android:id="@+id/navigation_mis_reservas"
+        android:icon="@drawable/baseline_event_24"
+        android:title="@string/mis_reservas" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_face_24"
+        android:title="@string/perfil" />
+
+
+</menu>
